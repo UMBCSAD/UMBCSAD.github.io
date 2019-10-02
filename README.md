@@ -20,5 +20,8 @@ To join our mailing list please send an email to sad-group+subscribe@umbc.edu
 It's called a calendar
 <iframe src="https://calendar.google.com/calendar/b/1/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=dW1iYy5lZHVfYWZsOXFnaTdyZWZsYmpyb251OHQ4a29xdWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA" style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>
 
+## Slide List
+1. [First Meeting](Slides/first_meeting.slides.html)
+
 ## List List
 `TODO: Insert lists of lists here`
