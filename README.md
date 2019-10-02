@@ -2,7 +2,7 @@
 Website/Portfolio for the UMBC System Administration and Software Development club.
 
 ## Mailing List
-To join our mailing list please send an email to sad-group+subscribe@umbc.edu
+To join our mailing list please send an email to [sad-group+subscribe@umbc.edu](mailto:sad-group+subscribe@umbc.edu)
 
 ## Officer List
 * Drew Barrett - President
