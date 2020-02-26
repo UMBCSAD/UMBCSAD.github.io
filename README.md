@@ -5,11 +5,11 @@ Website/Portfolio for the UMBC System Administration and Software Development cl
 To join our mailing list please send an email to [sad-group+subscribe@umbc.edu](mailto:sad-group+subscribe@umbc.edu)
 
 ## Officer List
-* Drew Barrett - President
+* Nikola Bura - President
 * Trent Foster - Vice President
-* Clark Jones - Treasurer
-* Trevor Moreland - Officer
-* Dakota Robey - Officer
+* Drew Barrett - Treasurer
+* Anna Staats - Keeper of the Watch
+* Seamus Burke - Environmental Advisor
 * Geoff Weiss - Advisor
 
 ## Project List
