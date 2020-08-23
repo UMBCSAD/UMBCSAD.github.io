@@ -6,11 +6,15 @@ To join our mailing list please send an email to [sad-group+subscribe@umbc.edu](
 
 ## Officer List
 * Nikola Bura - President
-* Trent Foster - Vice President
-* Drew Barrett - Treasurer
+* Henry Budris - Vice President
+* Bradley Stamler - Treasurer
 * Anna Staats - Keeper of the Watch
 * Seamus Burke - Environmental Advisor
 * Geoff Weiss - Advisor
+
+#### Former Officers
+* Drew Barrett - President 2019-2020
+* Trent Foster - Vice President 2019-2020
 
 ## Project List
 1. This website! (Please make a pull request if you have any ideas!)
