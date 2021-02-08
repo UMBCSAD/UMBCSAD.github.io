@@ -66,7 +66,7 @@ Go to [https://ipa.greenbank.lan](https://ipa.greenbank.lan) in your browser and
 
 This should bring you to your user account page. Feel free to customize it and give yourself a job title or phone number or something, I guess. (Don't add your address unless you want the entirety of SAD visiting your house.)
 
-Once you've changed your password, disconnect your VPN connection and try logging back in. This time you can check the box to save your password, if you're comfortable with that. VPN connection should now take no longer than 5-10 seconds, since all you have to do is right click > Connect. **We're all done!**
+Once you've changed your password, disconnect your VPN, then try re-connecting. This time you can check the box to save your password, if you're comfortable with that. VPN connection should now take no longer than 5-10 seconds, since all you have to do is right click > Connect. **We're all done!**
 
 ### Further Steps
 
