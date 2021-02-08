@@ -93,13 +93,14 @@ There is one main shared environment where we should have some common etiquette:
   - SAD_Sandbox is open to newer members and generally hosts temporary VMs that will be the first to go if we need to delete some to free up space. Just put whatever you want in here, TBH.
   - SAD_General is the general-purpose pool; it's open to established members (attended a few meetings and have used the Greenbank system a little bit). Try to limit VMs in this category to those that you want to stay up for an extended period of time (more than a week, say), or those that you want to be accessible to other members.
   - SAD_Infrastructure is open only to authorized members (board, experienced members, etc). It hosts "critical infrastructure" like pfSense and FreeIPA that we don't really want to give out console access to. Note: In many cases you can still obtain user-level access to these via the Web UI.
-- Try and put stuff in the appropriate resouce pool (though it doesn't really matter all that much).
+- Try and put stuff in the appropriate resource pool (though it doesn't really matter all *that* much).
 - If you're making a VM just for your own personal use, prepend your name to the VM name and hostname.
   - So instead of `ubuntu` for a Ubuntu workstation, I'd call it `nikola-ubuntu` or similar.
   - Try to do this both for the VM name itself (in the Proxmox VM creation dialog) and the hostname of the guest OS (when you're installing the OS onto the VM).
+  - We want to do this because names are a limited resource, and two people both using `ubuntu` would kind of suck.
   - Note: Others will still have console access to your VM. If you'd really like a VM for your own exclusive use, just ask us and we can set one up using Proxmox permissions.
   
-Outside of Proxmox, just use common sense. Do basically whatever you want on your own VMs. Be respectful to shared VMs. Apply rules one and two above. Don't worry too much about it.
+Outside of Proxmox, just use common sense. Do basically whatever you want on your own VMs. Be respectful to shared VMs. Apply rules one and two from Da Rules. Don't worry too much about it.
 
 And a note regarding permissions: **There's pretty much nothing in this system that is permanently blocked off.** What this means is, we *want* you all to move around and explore how this thing works. **The permissions system is just there to prevent trolling or silly mistakes, not because we don't trust you.** Want to see how the VPN is set up in pfSense? Just ask and we'll give you admin perms. Want to try adding Kerberos to FreeIPA? Again, just ask in Discord or something. If you want to get access to something, just ask one of us, and we'll *probably* give you access. Thanks to FreeIPA, it's not hard.
 
