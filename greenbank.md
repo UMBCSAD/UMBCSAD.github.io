@@ -73,10 +73,14 @@ Once you've changed your password, disconnect your VPN, then try re-connecting. 
 
 ### Further Steps 📚
 
-The full Greenbank environment will be explained further down, but the base infrastructure of the system consists of three hosts.
+The full Greenbank environment will be explained in the link in the next section, but the base infrastructure of the system consists of three hosts.
 
 - **Proxmox**: Accessible via [https://proxmox.greenbank.lan:8006](https://proxmox.greenbank.lan:8006). This is the management UI of the actual hypervisor which runs all the virtual machines. This is where you make new VMs and get console access to VMs.
 - **pfSense**: Accessible via [https://pfsense.greenbank.lan](https://pfsense.greenbank.lan). This is the firewall which sits between the VMs' private network and the Internet, and provides DHCP and DNS services to the private network. It also runs the OpenVPN server.
 - **FreeIPA**: Accessible via [https://ipa.greenbank.lan](https://ipa.greenbank.lan). This is the Identity Management server which holds all the user accounts, passwords, and group assignments. Other services use LDAP to get authentication/user info.
 
 Feel free to visit these hosts in your web browser and try logging in. By default you probably don't have sufficient permissions to do much of anything, but those will be granted soon.
+
+## Would You Like To Know More? 👨‍🚀
+
+For more info, please see: [https://sad.cs.umbc.edu/greenbank-design](https://sad.cs.umbc.edu/greenbank-design).
