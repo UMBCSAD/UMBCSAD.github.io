@@ -85,7 +85,7 @@ Feel free to visit these hosts in your web browser and try logging in. By defaul
 
 For more info about the overall architecture/design of the system, some use cases, and other fun facts, **please see**: [https://sad.cs.umbc.edu/greenbank-design](https://sad.cs.umbc.edu/greenbank-design).
 
-### User Etiquette
+### User Etiquette 🤬
 
 There is one main shared environment where we should have some common etiquette: Proxmox.
 
@@ -99,6 +99,8 @@ There is one main shared environment where we should have some common etiquette:
   - Try to do this both for the VM name itself (in the Proxmox VM creation dialog) and the hostname of the guest OS (when you're installing the OS onto the VM).
   - Note: Others will still have console access to your VM. If you'd really like a VM for your own exclusive use, just ask us and we can set one up using Proxmox permissions.
   
-Outside of Proxmox, just use common sense. And a note: **There's pretty much nothing in this system that is permanently blocked off.** What this means is, we *want* you all to move around and explore how this thing works. **The permissions system is just there to prevent trolling or silly mistakes, not because we don't trust you.** Want to see how the VPN is set up in pfSense? Just ask and we'll give you admin perms. Want to try adding Kerberos to FreeIPA? Again, just ask. If you want to get access to something, just ask one of us, and we'll *probably* give you access. Thanks to FreeIPA, it's not hard.
+Outside of Proxmox, just use common sense. Do basically whatever you want on your own VMs. Be respectful to shared VMs. Apply rules one and two above. Don't worry too much about it.
+
+And a note regarding permissions: **There's pretty much nothing in this system that is permanently blocked off.** What this means is, we *want* you all to move around and explore how this thing works. **The permissions system is just there to prevent trolling or silly mistakes, not because we don't trust you.** Want to see how the VPN is set up in pfSense? Just ask and we'll give you admin perms. Want to try adding Kerberos to FreeIPA? Again, just ask in Discord or something. If you want to get access to something, just ask one of us, and we'll *probably* give you access. Thanks to FreeIPA, it's not hard.
 
 Have fun!
