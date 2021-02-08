@@ -16,7 +16,8 @@ Don't *intentionally* break the infrastructure or other people's VMs.
 
 So don't spam the shutdown buttons or screw up the proxy or whatever just because you feel like it. We trust all of you to not do that, and I really doubt anyone will ever break something intentionally, but it had to be said.
 - Note: Breaking your *own* VMs is allowed; encouraged, even. Do whatever you want to your own stuff, as long as you're reasonably certain nobody else is using it.
-- Security "recon" is allowed, think `nmap` and similar tools... again, encouraged, even. You can *find* security holes, just don't exploit them to harm stuff. There's various personal info on here, if you manage to access it, don't snoop around in it too much.
+- Security "recon" is allowed, think `nmap` and similar tools... again, encouraged, even. You can *find* security holes, just don't exploit them to harm stuff. There's various personal info on here, if you manage to access it, don't snoop around in it.
+- Finally, again, this is about *intentional* damage. If you break stuff in the process of trying to set something up, "c'est la vie". Who cares. We just restore to the last snapshot or backup. We won't be mad, we'll be happy you're learning.
 
 ### Rule Two: Don't let the bad guys in 🕵️‍
 
