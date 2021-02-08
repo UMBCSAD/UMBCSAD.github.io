@@ -8,9 +8,9 @@ The Greenbank Lab Environment has been established for the purpose of creating a
 
 That said, it is a shared computing environment running on our own physical hardware, so we have to set some reasonable restrictions. This document will explain how to make use of the environment and how to be a good "SAD citizen".
 
-## Da Rules
+## Da Rules 📘
 
-### Rule One: Don't break other people's stuff
+### Rule One: Don't break other people's stuff 🔨
 
 Don't *intentionally* break the infrastructure or other people's VMs.
 
@@ -18,7 +18,7 @@ So don't spam the shutdown buttons or screw up the proxy or whatever just becaus
 - Note: Breaking your *own* VMs is allowed; encouraged, even. Do whatever you want to your own stuff, as long as you're reasonably certain nobody else is using it.
 - Security "recon" is allowed, think `nmap` and similar tools... again, encouraged, even. You can *find* security holes, just don't exploit them to harm stuff. There's various personal info on here, if you manage to access it, don't snoop around in it too much.
 
-### Rule Two: Don't let the bad guys in
+### Rule Two: Don't let the bad guys in 🕵️‍
 
 Don't create security holes.
 
@@ -26,7 +26,7 @@ Basically that means be careful with the **firewall** and the **VPN**. Don't cre
 
 It also means don't test **malware** on Greenbank systems. Malware is cool and fun, but it's more the domain of the Cyberdawgs and Malware Research Group, not us. If you'd really like to try it, let the board know and we'll make a specially-secured VM for that purpose.
 
-## Getting Started: VPN Access and Changing your Password
+## Getting Started: VPN Access and Changing your Password 👩‍🎓
 
 Now that that's over with - we'll explain how to actually get logged in!
 
@@ -38,7 +38,7 @@ If you weren't given all this stuff then contact the board to get access!
 
 Anyways, you'll need to install OpenVPN...
 
-### Installing and Connecting
+### Installing and Connecting 💻
 
 Note: If the VPN client asks you whether you want to save the password, for now, leave that unchecked (do not save password), since we'll be changing your password in a minute.
 
@@ -48,7 +48,7 @@ Note: If the VPN client asks you whether you want to save the password, for now,
 - **BSD**: IDK google it
 - **Plan 9**: wha- 👀
 
-### Testing VPN Connectivity
+### Testing VPN Connectivity 🔎
 
 If the connection window disappears and now you have a green status icon, or a checkmark, or something similar, then you should be connected.
 
@@ -58,7 +58,7 @@ Now we should test the DNS. Try going to [https://pfsense.greenbank.lan](https:/
 
 Basically, if you can go to [https://pfsense.greenbank.lan](https://pfsense.greenbank.lan) in your browser and see the pfSense login screen, then the VPN is working. Cool!
 
-### Changing Your Password
+### Changing Your Password 🔐
 
 Please change your password (and remember it; or even better, put it in a password manager) before you disconnect. We'd really like everyone to not be using the default passwords.
 
@@ -70,7 +70,7 @@ This should bring you to your user account page. Feel free to customize it and g
 
 Once you've changed your password, disconnect your VPN, then try re-connecting. This time you can check the box to save your password, if you're comfortable with that. VPN connection should now take no longer than 5-10 seconds, since all you have to do is right click > Connect. **We're all done!**
 
-### Further Steps
+### Further Steps 📚
 
 The full Greenbank environment will be explained further down, but the base infrastructure of the system consists of three hosts.
 
