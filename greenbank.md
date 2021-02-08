@@ -38,9 +38,11 @@ Anyways, you'll need to install OpenVPN...
 
 ### Installing and Connecting
 
-- **Windows**: Go here https://openvpn.net/community-downloads/ and grab the Windows 64-bit MSI installer and install it. You should see OpenVPN GUI in your start menu now; open it. It should pop up a little screen with a lock on it in your notifications tray, like [this](https://i.imgur.com/6TB126q.png). Right-click on it, and click `Import File...`. Find the `.ovpn` file you were given (it should be something like `sadgreenbank-yourname-2021-02-06.ovpn`) and import it. Then hit Connect. Log in with the username and password we gave you. If there's a failure/error you might need to reboot your machine (or restart the Service, but reboot is easier).
-- **Mac**: Go here https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-macos/ and scroll to `OpenVPN Connect v3` and grab the `OpenVPN Connect v3 for macOS` installer. Install it and use the GUI to import the `.ovpn` file and connect. Log in with the username and password we gave you.
-- **Linux**: Instructions are available here https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/. Generally you should probably install the OpenVPN Client using the package manager for your particular distro. Follow the instructions and run the appropriate command to connect, probably `openvpn --config [yourfilegoeshere].ovpn`. Log in with the username and password we gave you.
+Note: If the VPN client asks you whether you want to save the password, for now, leave that unchecked (do not save password), since we'll be changing your password in a minute.
+
+- **Windows**: Go here [https://openvpn.net/community-downloads/](https://openvpn.net/community-downloads/) and grab the Windows 64-bit MSI installer and install it. You should see OpenVPN GUI in your start menu now; open it. It should pop up a little screen with a lock on it in your notifications tray, like [this](https://i.imgur.com/6TB126q.png). Right-click on it, and click `Import File...`. Find the `.ovpn` file you were given (it should be something like `sadgreenbank-yourname-2021-02-06.ovpn`) and import it. Then hit Connect. Log in with the username and password we gave you. If there's a failure/error you might need to reboot your machine (or restart the Service, but reboot is easier).
+- **Mac**: Go here [https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-macos/](https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-macos/) and scroll to `OpenVPN Connect v3` and grab the `OpenVPN Connect v3 for macOS` installer. Install it and use the GUI to import the `.ovpn` file and connect. Log in with the username and password we gave you.
+- **Linux**: Instructions are available here [https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/](https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/). Generally you should probably install the OpenVPN Client using the package manager for your particular distro. Follow the instructions and run the appropriate command to connect, probably `openvpn --config [yourfilegoeshere].ovpn`. Log in with the username and password we gave you.
 - **BSD**: IDK google it
 - **Plan 9**: wha- 👀
 
@@ -48,11 +50,11 @@ Anyways, you'll need to install OpenVPN...
 
 If the connection window disappears and now you have a green status icon, or a checkmark, or something similar, then you should be connected.
 
-Try, in the terminal, `ping 192.168.1.50` and `ping 192.168.1.1`. If both of these work, then you should be good to go. Try visiting http://192.168.1.1 in your web browser (you'll need to clear the self-signed-cert warning; in Firefox hit `Advanced...` then `Accept the Risk and Continue`, for example). You should see the pfSense login page. You should be able to log in with your username and password, though it'll probably just give you an error screen as you have no pfSense perms by default. If any of these steps failed, let us know.
+Try, in the terminal, `ping 192.168.1.50` and `ping 192.168.1.1`. If both of these work, then you should be good to go. Try visiting [http://192.168.1.1](http://192.168.1.1) in your web browser (you'll need to clear the self-signed-cert warning; in Firefox hit `Advanced...` then `Accept the Risk and Continue`, for example). You should see the pfSense login page. You should be able to log in with your username and password, though it'll probably just give you an error screen as you have no pfSense perms by default. If any of these steps failed, let us know.
 
-Now we should test the DNS. Try going to https://pfsense.greenbank.lan in your browser. This should take you to the same page you were on before. If it doesn't work, let us know.
+Now we should test the DNS. Try going to [https://pfsense.greenbank.lan](https://pfsense.greenbank.lan) in your browser. This should take you to the same page you were on before. If it doesn't work, let us know.
 
-Basically, if you can go to https://pfsense.greenbank.lan in your browser and see the pfSense login screen, then the VPN is working. Cool!
+Basically, if you can go to [https://pfsense.greenbank.lan](https://pfsense.greenbank.lan) in your browser and see the pfSense login screen, then the VPN is working. Cool!
 
 ### Changing Your Password
 
@@ -60,6 +62,18 @@ Please change your password (and remember it; or even better, put it in a passwo
 
 Note: Passwords are hashed, salted, and stored securely in FreeIPA... but this is nevertheless a shared lab environment, potentially vulnerable to data breaches or MITM attacks. *Please* don't use, like, the same password that you've used for your bank accounts and UMBC accounts here. Please make a unique password.
 
-Go to https://ipa.greenbank.lan in your browser and log in using your default username and password. It should succeed, then say `Your password has expired. Please enter a new password.` and immediately prompt you to make a password change. Enter your current password (the default one we provided you) and then your desired new password. Leave the OTP field blank. Submit the form.
+Go to [https://ipa.greenbank.lan](https://ipa.greenbank.lan) in your browser and log in using your default username and password. It should succeed, then say `Your password has expired. Please enter a new password.` and immediately prompt you to make a password change. Enter your current password (the default one we provided you) and then your desired new password. Leave the OTP field blank. Submit the form.
 
 This should bring you to your user account page. Feel free to customize it and give yourself a job title or phone number or something, I guess. (Don't add your address unless you want the entirety of SAD visiting your house.)
+
+Once you've changed your password, disconnect your VPN connection and try logging back in. This time you can check the box to save your password, if you're comfortable with that. VPN connection should now take no longer than 5-10 seconds, since all you have to do is right click > Connect. **We're all done!**
+
+### Further Steps
+
+The full Greenbank environment will be explained further down, but the base infrastructure of the system consists of three hosts.
+
+- **Proxmox**: Accessible via [https://proxmox.greenbank.lan:8006](https://proxmox.greenbank.lan:8006). This is the management UI of the actual hypervisor which runs all the virtual machines. This is where you make new VMs and get console access to VMs.
+- **pfSense**: Accessible via [https://pfsense.greenbank.lan](https://pfsense.greenbank.lan). This is the firewall which sits between the VMs' private network and the Internet, and provides DHCP and DNS services to the private network. It also runs the OpenVPN server.
+- **FreeIPA**: Accessible via [https://ipa.greenbank.lan](https://ipa.greenbank.lan). This is the Identity Management server which holds all the user accounts, passwords, and group assignments. Other services use LDAP to get authentication/user info.
+
+Feel free to visit these hosts in your web browser and try logging in. By default you probably don't have sufficient permissions to do much of anything, but those will be granted soon.
