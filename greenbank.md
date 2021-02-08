@@ -49,7 +49,7 @@ Note: If the VPN client asks you whether you want to save the password, for now,
 - **BSD**: IDK google it
 - **Plan 9**: wha- 👀
 
-### Testing VPN Connectivity 🔎
+### Testing VPN Connectivity 🔌
 
 If the connection window disappears and now you have a green status icon, or a checkmark, or something similar, then you should be connected.
 
