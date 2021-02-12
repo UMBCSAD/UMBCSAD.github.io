@@ -53,7 +53,7 @@ Note: If the VPN client asks you whether you want to save the password, for now,
 
 If the connection window disappears and now you have a green status icon, or a checkmark, or something similar, then you should be connected.
 
-Try, in the terminal, `ping 192.168.1.50` and `ping 192.168.1.1`. If both of these work, then you should be good to go. Try visiting [http://192.168.1.1](http://192.168.1.1) in your web browser (you'll need to clear the self-signed-cert warning; in Firefox hit `Advanced...` then `Accept the Risk and Continue`, for example). You should see the pfSense login page. You should be able to log in with your username and password, though it'll probably just give you an error screen as you have no pfSense perms by default. If any of these steps failed, let us know.
+Try, in the terminal, `ping 192.168.1.50` and `ping 192.168.1.1`. If both of these work, then you should be good to go. Try visiting [http://192.168.1.1](http://192.168.1.1) in your web browser (you'll need to clear the self-signed-cert warning; in Firefox hit `Advanced...` then `Accept the Risk and Continue`, for example). You should see the pfSense login page. You should be able to log in with your username and password, though it'll probably just give you [an error screen](https://media.discordapp.net/attachments/808093520963043370/809855940911300658/Screen_Shot_2021-02-12_at_1.38.18_PM.png) as you have no pfSense perms by default. If any of these steps failed, let us know.
 
 Now we should test the DNS. Try going to [https://pfsense.greenbank.lan](https://pfsense.greenbank.lan) in your browser. This should take you to the same page you were on before. If it doesn't work, let us know.
 
